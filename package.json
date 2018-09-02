@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export -o ./docs",
-    "start": "next build && next start"
+    "start": "next build && next start -p $PORT"
   },
   "keywords": [],
   "author": "",
