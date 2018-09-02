@@ -1,0 +1,170 @@
+$tablet = 768px;
+$desktop = 992px;
+$wide-screen = 1200px;
+
+.menu
+  width 100%
+  top 0
+  background-color #333
+  position fixed
+
+.menuContent
+  display flex
+  align-items center
+  justify-content space-between
+  height 50px
+  max-width 800px
+  margin 0 auto
+  padding 0 30px
+
+
+
+.slug
+  display none
+
+  @media (min-width $tablet)
+    display block
+    color #b7bbbf
+
+.slug_mobile
+  color #b7bbbf
+  line-height 24px
+
+  @media (min-width $tablet)
+    display none
+
+
+
+.buyText
+  display none
+
+  @media (min-width $tablet)
+    display inline
+
+.buyText_mobile
+  @media (min-width $tablet)
+    display none
+
+.buyTextIcon
+  width 20px
+  height 20px
+
+
+
+.cover
+  margin 80px auto 60px
+  display block
+  box-shadow 2px 2px 14px -2px rgba(0,0,0,0.6)
+  width 100%
+  max-width 800px
+
+
+
+.title
+  color #17a2b8
+  text-align center
+
+.description
+  font-size 18px
+  text-align center
+  max-width 900px
+  margin 40px auto
+  color #333
+  padding 0 10px
+
+  @media (min-width $tablet)
+    padding 0 30px
+
+.descriptionParagraph
+  &:after
+    content '* * *'
+    display block
+    text-align center
+    color #17a2b8
+    margin-top 26px
+
+  &:last-child:after
+    content ''
+
+
+
+.storeLinks
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  margin-top 60px
+
+  @media (min-width $tablet)
+    flex-direction row
+
+.storeLink
+  margin 0 20px
+  font-size 26px
+  color #17a2b8
+
+
+
+.author
+  background-color #f0fdff
+  margin-top 50px
+
+.authorContent
+  max-width 900px
+  margin 0 auto
+  padding 60px 0
+
+.authorImage
+  margin 50px auto
+  display block
+  width 80%
+  box-shadow 1px 2px 8px -4px rgba(0,0,0,0.6)
+
+
+
+.footer
+  display flex
+  flex-direction column
+  align-items center
+  padding 30px
+
+  @media (min-width $tablet)
+    height 50px
+    flex-direction row
+    justify-content space-around
+
+.footerLink
+  margin-top 6px
+
+  @media (min-width $tablet)
+    margin-top 0
+
+
+
+.purchase
+  top 30%
+
+:global(.fade.in)
+  opacity 1
+
+:global(.modal-backdrop.in)
+  opacity .5
+
+:global(.modal.fade .modal-dialog)
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+  width 300px
+  margin 0
+
+.modalStoreLinks
+  display flex
+  flex-direction column
+  align-items center
+  margin-bottom 20px
+
+.modalStoreLink
+  font-size 26px
+  margin-top 10px
+

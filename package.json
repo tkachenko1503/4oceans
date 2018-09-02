@@ -1,0 +1,24 @@
+{
+  "name": "oceans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-stylus": "0.1.0",
+    "autoprefixer": "8.6.5",
+    "next": "6.1.1",
+    "poststylus": "1.0.0",
+    "react": "16.4.1",
+    "react-bootstrap": "0.32.1",
+    "react-dom": "16.4.1",
+    "stylus": "0.54.5"
+  }
+}
